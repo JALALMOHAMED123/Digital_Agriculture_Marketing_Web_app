@@ -1,98 +1,136 @@
 *{
-    margin:0;
     padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+.navbar-nav{
+    color: black;
+    font-weight: 600;
 
 }
-.header
-{
-    height:100vh;
+.navbar-brand{
+    color:black;
+    font-size: 30px;
+    font-weight: 800;
+}
+.carousel-caption{
+    position: absolute;
+    top:25%;
+     transform:translate(-10%);
+     /* left:8%;   */
+}
 
+.carousel-caption h1{
+    font-size: 70px;
+    font-weight:400;
+    color:black;
 }
-.navbar-sty
-{
-    box-shadow: 0 5px 10px #efefef;
+.carousel-caption p{
+    color: black;
+    font-weight: 600;
 }
-.logo
-{
-    height:40px;
-    padding:2px 10px;
-
-}
-.icon-bar
-{
-    background:darkorange;
-}
-li a{
-    color:green;
-}
-.big-text
-{
-    font-size:30px;
-    margin:20px 0;
-    color:green;
-
-}
-.text-first
-{
-    color:darkgreen
-}
-a.btn
-{
-    margin:30px 10px;
-    width:150px;
-    padding:10px;
-    border-radius:20px;
-}
-a.btn1
-{
+.btn0 {
     background-color: green;
+    height:45px;
+    width:150px;
     color:white;
+    outline: none;
+    border: none;
 
 }
-a.btn2
-{
-    background: transparent;
-    border:1px solid darkorange;
-    background-color:darkorange;
-    color:black
+.btn0:hover{
+    background-color:white;
+    color:darkgreen;
+    transition:0.4s;
+}
+
+/* sub */
+.sub{
+    background-color: rgb(70,63,63);
 
 }
-a.btn:hover
-{
-    background: lightsalmon;
+
+.fas{
+    font-size:32px;
+}
+
+/*  */
+
+.collection span{
+    color: yellowgreen;
+    font-size: 19px;
+    font-weight: 800;
+    padding-left:5px;
+}
+
+.card{
     border:none;
-    color:#fff;
+    height: 120%;
+    width:100%;
+}
+.card img{
+    height:100%;
+}
+
+.card img:hover{
     box-shadow:5px 5px 10px #999;
-    transition:0.3s;
-}
-.banner-info,.banner-img
-{
-    margin:30px 0;
-    background-color: url(agri_img.png);
-    background-size:cover;
-
+    transition:0.3s; 
 }
 
 
+.collection input{
+    position:absolute;
+    height:45px;
+    width:110px;
+    background-color:yellowgreen;
+    color:white;
+    border-radius: 5px;
+    outline:none;
+    border:none;
+    text-align:center;
+    top:45%;
+    left:30%;
+    opacity:0;
+}
+.collection .card:hover input{
+    opacity: 1;
+    transition:1s;
+}
+
+.collection input:hover{
+    background-color:rgb(6, 156, 44);
+    transition: 0.5s;
+}
+
+/* products */
 
 
+.contact input{
+    height: 50px;
+    width:100%;
+    outline:none;
+    border:none;
+    color: grey;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 9px 9px 5px 0px rgba(0,0,0,0.7);
+-webkit-box-shadow: 9px 9px 5px 0px rgba(0,0,0,0.7);
+-moz-box-shadow: 9px 9px 5px 0px rgba(0,0,0,0.7);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.btn4{
+    height: 45px;
+    width: 160px;
+    background-color: yellowgreen;
+    color: white;
+    outline: none;
+    border:none;
+    cursor:pointer;
+    display:inline-block;
+    box-shadow: 0px 2px 30px -11px rgba(0,0,0,0.7);
+-webkit-box-shadow: 0px 2px 30px -11px rgba(0,0,0,0.7);
+-moz-box-shadow: 0px 2px 30px -11px rgba(0,0,0,0.7);
+}
 
 
 
