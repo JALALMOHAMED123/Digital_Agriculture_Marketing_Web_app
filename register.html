@@ -1,0 +1,163 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="./style.css">
+        <script src="https://kit.fontawesome.com/c26cd2166c.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js"></script>
+        <!-- <script src="https://cdn.firebase.com/libs/firebaseui/2.2.1/firebaseui.js"></script> -->
+        <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.2.1/firebaseui.css"/>
+        <title>Register</title>
+    </head>
+    <body>
+
+        <!-- navbar -->
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+            <a class="navbar-brand pl-5" href="#">Digital Agricultural Marketing</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link pr-4" href="agri.html"><i class="fa fa-home" aria-hidden="true"></i> Home </a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link pr-4" href="product.html"><i class="fa fa-product-hunt" aria-hidden="true"></i> Products</a>
+                </li>
+                <!-- login  -->
+                <li class="nav-item dropdown active">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-sign-in" aria-hidden="true"></i>  Login
+                  </a>
+                  <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item text-white" href="login.html">Login</a>
+                    <a class="dropdown-item active text-white" href="register.html">Register</a>
+                  </div>
+                </li>
+                <!-- / -->
+                <!-- <li class="nav-item active">
+                  <a class="nav-link pr-4" href="login.html"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a>
+                </li> -->
+                <li class="nav-item">
+                  <a class="nav-link pr-4" href="addcart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Addcart</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link pr-4" href="aboutus.html"><i class="fa fa-address-card" aria-hidden="true"></i> AboutUs</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-twitter"></i></a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-facebook"></i></a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-telegram"></i></a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-youtube"></i></a></li>
+              </ul>
+            </div>
+          </nav>
+        <!-- /navbar action="login.html" method="post"-->
+        <form class="box" id="register">
+            <h1>Register</h1>
+            <input type="text" name="" placeholder="Name" id="name">
+            <input type="text" name="" placeholder="Address" id="address">
+            <input type="text" name="" placeholder="District" id="district">
+            <input type="text" name="" placeholder="Type of User" id="type">
+            <input type="text" name="" placeholder="Phone Number" id="phoneno">
+            <input type="password" name="pass" placeholder="New password" id="pwd">
+           
+            <input type="submit" name="" placeholder="Submit" id="sub">
+            <!-- <input type="password" name="" placeholder="Confirm password"> -->
+            <!-- <input type="submit" name="" value="Register" onclick="registeruser();"> -->
+            <!-- <p><a href="register.html">New User?</a></p><p>Forget password</p> -->
+        </form>
+  </body>
+    <style>
+        body
+        {
+            /* margin:0;
+            padding:0;
+            font-family:scans-serif; */
+            background: #34495e;
+        }
+        .box{
+            width:450px;
+            padding:40px;
+            position:absolute;
+            margin-top: 29%;
+            left:50%;
+            transform:translate(-50%,-50%);
+            background: #191919;
+            text-align:center;
+        }
+        .box h1{
+            color:white;
+            text-transform:uppercase;
+            font-weight:500;
+    
+        }
+        .box p{
+            color:darkcyan;
+        }
+        .box input[type="text"],.box input[type= "password"]
+        {
+            border:0;
+            background:none;
+            display:block;
+            margin:20px auto;
+            text-align:center;
+            border:2px solid #3498db;
+            padding:14px 10px;
+            width:200px;
+            outline:none;
+            color:white;
+            border-radius:24px;
+            transition:0.25s;
+        }
+        .box input[type="text"]:focus,.box input[type= "password"]:focus
+        {
+            width: 280px;
+            border-color:#2ecc71;
+
+        }
+        .box input[type="submit"]
+        {
+            border:0;
+            background:none;
+            display:block;
+            margin:20px auto;
+            text-align:center;
+            border:2px solid #3498db;
+            padding:14px 10px;
+            width:150px;
+            outline:none;
+            color:white;
+            border-radius:24px;
+            padding:14px 40px;
+            border:2px solid #2ecc71;
+            cursor:pointer;
+            
+        }
+        .box input[type="submit"]:hover
+        {
+            background:#2ecc71;
+        }
+        .button {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 10px;
+        }
+    </style>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>

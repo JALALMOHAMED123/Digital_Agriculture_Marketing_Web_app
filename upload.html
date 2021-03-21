@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/c26cd2166c.js"></script>
+    
+    <title>Upload</title>
+  </head>
+  <body>
+    <a class="chat_icon" href="http://127.0.0.1:5000/"><i class="fab fa-facebook-messenger"></i></a>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+      <a class="navbar-brand pl-5" href="#">Digital Agricultural Marketing</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item ">
+            <a class="nav-link pr-4" href="agri.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link pr-4" href="upload.html"><i class="fa fa-upload" aria-hidden="true"></i> Upload</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-sign-in" aria-hidden="true"></i>  Login
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="login.html">Login</a>
+              <a class="dropdown-item" href="register.html">Register</a>
+            </div>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link pr-4" href="login.html"><i class="fa fa-sign-in" aria-hidden="true"></i> Login </a>
+          </li> -->
+          <li class="nav-item ">
+            <a class="nav-link pr-4" href="schemes.html"><i class="fa fa-search-plus" aria-hidden="true"></i> Schemes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link pr-4" href="aaboutus.html"><i class="fa fa-address-card" aria-hidden="true"></i> AboutUs</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-twitter"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-facebook"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-telegram"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-youtube"></i></a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- /navbar -->
+    <!-- form section -->
+    <form>
+      <h1 class="blockname pl-5 pt-4"><b> Enter Upload Product details:</b></h1>
+      <div class="form-group row pl-5 pt-5">
+        <label for="inputtext" class="col-sm-2 col-form-label">Product Name:</label>
+        <div class="col-sm-5">
+          <input type="text" class="form-control" placeholder="Product name">
+        </div>
+      </div>
+      <div class="form-group row pl-5 pt-3">
+        <label for="inputEmail3" class="col-sm-2 col-form-label">Catagory:</label>
+        <div class="col-sm-5">
+          <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+            <option selected>Choose Catagory </option>
+            <!-- <option value="1">1</option> -->
+            <option value="2">vegetables</option>
+            <option value="3">Fruits</option>
+            <option value="4">Crops</option>
+            <option value="5">Others</option>
+          </select>
+          <!-- <input type="email" class="form-control" placeholder="Quantity in KG"> -->
+        </div>
+      </div>
+      <div class="form-group row pl-5 pt-3">
+        <label for="inputEmail3" class="col-sm-2 col-form-label">Quantity:</label>
+        <div class="col-sm-5">
+          <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+            <option selected>1 kg</option>
+            <!-- <option value="1">1</option> -->
+            <option value="2">2 kg</option>
+            <option value="3">3 kg</option>
+            <option value="4">4 kg</option>
+            <option value="5">5 kg</option>
+            <option value="5">6 kg</option>
+            <option value="5">7 kg</option>
+            <option value="5">8 kg</option>
+            <option value="5">9 kg</option>
+            <option value="5">10 kg</option>
+          </select>
+          <!-- <input type="email" class="form-control" placeholder="Quantity in KG"> -->
+        </div>
+      </div>
+      <div class="form-group row pl-5 pt-3">
+        <label for="inputtext" class="col-sm-2 col-form-label">Price:</label>
+        <div class="col-sm-5">
+          <input type="text" class="form-control" placeholder="Price">
+        </div>
+      </div>
+      <div class="form-group row pl-5 pt-3">
+        <label for="inputtext" class="col-sm-2 col-form-label">Farmer Name:</label>
+        <div class="col-sm-5">
+          <input type="text" class="form-control" placeholder="farmer name">
+        </div>
+      </div>
+      <div class="form-group row pl-5 pt-3">
+        <label for="inputtext" class="col-sm-2 col-form-label">Phone Number:</label>
+        <div class="col-sm-5">
+          <input type="text" class="form-control" placeholder="Phone Number">
+        </div>
+      </div>
+      
+      <!-- <fieldset class="form-group pl-5 py-3">
+        <div class="row">
+          <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
+          <div class="col-sm-5">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+              <label class="form-check-label" for="gridRadios1">
+                First radio
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+              <label class="form-check-label" for="gridRadios2">
+                Second radio
+              </label>
+            </div>
+            <div class="form-check disabled">
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
+              <label class="form-check-label" for="gridRadios3">
+                Third disabled radio
+              </label>
+            </div>
+          </div>
+        </div>
+      </fieldset> -->
+      <div class="form-group row pl-5 py-3 ">
+        <div class="col-sm-2">Apply</div>
+        <div class="col-sm-5">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck1">
+            <label class="form-check-label" for="gridCheck1">
+              Terms & Conditions
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="form-group row pl-5 py-3">
+        <div class="col-sm-5">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </form>
+
+    <!-- /form -->
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
